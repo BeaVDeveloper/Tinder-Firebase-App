@@ -15,6 +15,7 @@
 		1B88AC1021FDAE3F005AEAE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC0F21FDAE3F005AEAE3 /* Extensions.swift */; };
 		1B88AC1321FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1221FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift */; };
 		1B88AC1521FDBECD005AEAE3 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1421FDBECD005AEAE3 /* TopNavigationStackView.swift */; };
+		1B88AC1721FDDF76005AEAE3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1621FDDF76005AEAE3 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1B88AC0F21FDAE3F005AEAE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1B88AC1221FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		1B88AC1421FDBECD005AEAE3 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
+		1B88AC1621FDDF76005AEAE3 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				1B88AC1221FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift */,
 				1B88AC1421FDBECD005AEAE3 /* TopNavigationStackView.swift */,
+				1B88AC1621FDDF76005AEAE3 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				1B88AC1321FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift in Sources */,
 				1B88AC1021FDAE3F005AEAE3 /* Extensions.swift in Sources */,
 				1B88ABFD21FDADAB005AEAE3 /* AppDelegate.swift in Sources */,
+				1B88AC1721FDDF76005AEAE3 /* CardView.swift in Sources */,
 				1B88AC1521FDBECD005AEAE3 /* TopNavigationStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
