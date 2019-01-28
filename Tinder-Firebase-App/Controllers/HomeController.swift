@@ -15,20 +15,16 @@ class HomeController: UIViewController {
     let buttonStackView = HomeBottomControlsStackView()
     
     
-    let cardViewModless: [CardViewModel] = {
+    let cardViewModels: [CardViewModel] = {
         let producers = [
-            User(name: "Kelly", age: 23, profession: "Music DJ", imageName: "lady5c"),
-            User(name: "Jane", age: 18, profession: "Teacher", imageName: "lady4c"),
-            Advertiser(title: "Some advertiser text", brandName: "Brand Name", posterPhotoName: "slide_out_menu_poster")
+            Advertiser(title: "Some advertiser text", brandName: "Brand Name", posterPhotoName: "slide_out_menu_poster"),
+            User(name: "Kelly", age: 23, profession: "Music DJ", imageNames: ["kelly1", "kelly2", "kelly3"]),
+            User(name: "Jane", age: 18, profession: "Teacher", imageNames: ["jane1", "jane2", "jane3"])
         ] as [ProducesCardViewModel]
         
         let viewModels = producers.map({$0.toCardViewModel()})
         return viewModels
     }()
-    
-    let cardViewModels = ([
-       
-        ] as [ProducesCardViewModel]).map({$0.toCardViewModel()})
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +33,6 @@ class HomeController: UIViewController {
     }
 
     fileprivate func setupCards() {
-        
         cardViewModels.forEach { (cardVM) in
             let cardView = CardView(frame: .zero)
             cardView.cardViewModel = cardVM
