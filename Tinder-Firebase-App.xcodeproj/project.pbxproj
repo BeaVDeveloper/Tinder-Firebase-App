@@ -19,6 +19,9 @@
 		1B88AC1A21FE2324005AEAE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1921FE2324005AEAE3 /* User.swift */; };
 		1B88AC1E21FE2C04005AEAE3 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1D21FE2C04005AEAE3 /* CardViewModel.swift */; };
 		1B88AC2021FE4019005AEAE3 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC1F21FE4019005AEAE3 /* Advertiser.swift */; };
+		1B88AC2221FF79DE005AEAE3 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2121FF79DE005AEAE3 /* RegistrationController.swift */; };
+		1B88AC2421FF8206005AEAE3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2321FF8206005AEAE3 /* CustomTextField.swift */; };
+		1B88AC2622005F34005AEAE3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2522005F34005AEAE3 /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		1B88AC1921FE2324005AEAE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1B88AC1D21FE2C04005AEAE3 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		1B88AC1F21FE4019005AEAE3 /* Advertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
+		1B88AC2121FF79DE005AEAE3 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		1B88AC2321FF8206005AEAE3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1B88AC2522005F34005AEAE3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 				1B88AC1221FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift */,
 				1B88AC1421FDBECD005AEAE3 /* TopNavigationStackView.swift */,
 				1B88AC1621FDDF76005AEAE3 /* CardView.swift */,
+				1B88AC2321FF8206005AEAE3 /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1B88ABFE21FDADAB005AEAE3 /* HomeController.swift */,
+				1B88AC2121FF79DE005AEAE3 /* RegistrationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				1B88AC1D21FE2C04005AEAE3 /* CardViewModel.swift */,
+				1B88AC2522005F34005AEAE3 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -197,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B88ABFF21FDADAB005AEAE3 /* HomeController.swift in Sources */,
+				1B88AC2622005F34005AEAE3 /* RegistrationViewModel.swift in Sources */,
+				1B88AC2421FF8206005AEAE3 /* CustomTextField.swift in Sources */,
 				1B88AC1321FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift in Sources */,
 				1B88AC2021FE4019005AEAE3 /* Advertiser.swift in Sources */,
 				1B88AC1021FDAE3F005AEAE3 /* Extensions.swift in Sources */,
@@ -204,6 +215,7 @@
 				1B88AC1E21FE2C04005AEAE3 /* CardViewModel.swift in Sources */,
 				1B88AC1721FDDF76005AEAE3 /* CardView.swift in Sources */,
 				1B88AC1521FDBECD005AEAE3 /* TopNavigationStackView.swift in Sources */,
+				1B88AC2221FF79DE005AEAE3 /* RegistrationController.swift in Sources */,
 				1B88AC1A21FE2324005AEAE3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,8 +28,16 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        topStackView.settingsButton.addTarget(self, action: #selector(handleSettings), for: .touchUpInside)
+        
         setupLayout()
         setupCards()
+    }
+    
+    @objc fileprivate func handleSettings() {
+        let registrationVC = RegistrationController()
+        present(registrationVC, animated: true)
     }
 
     fileprivate func setupCards() {
