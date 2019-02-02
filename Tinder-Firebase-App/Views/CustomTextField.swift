@@ -19,7 +19,6 @@ class CustomTextField: UITextField {
         
         super.init(frame: .zero)
         heightAnchor.constraint(equalToConstant: self.height)
-        layer.cornerRadius = 22
         backgroundColor = .white
     }
     

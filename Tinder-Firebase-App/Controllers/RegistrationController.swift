@@ -46,6 +46,7 @@ class RegistrationController: UIViewController {
         let tf = CustomTextField(padding: 24, height: 44)
         tf.placeholder = "Enter full name"
         tf.addTarget(self, action: #selector(handleTextChange), for: .editingChanged)
+        tf.layer.cornerRadius = 22
         return tf
     }()
     
@@ -54,6 +55,7 @@ class RegistrationController: UIViewController {
         tf.placeholder = "Enter email"
         tf.keyboardType = .emailAddress
         tf.addTarget(self, action: #selector(handleTextChange), for: .editingChanged)
+        tf.layer.cornerRadius = 22
         return tf
     }()
     
@@ -62,6 +64,7 @@ class RegistrationController: UIViewController {
         tf.placeholder = "Enter password"
         tf.isSecureTextEntry = true
         tf.addTarget(self, action: #selector(handleTextChange), for: .editingChanged)
+        tf.layer.cornerRadius = 22
         return tf
     }()
     
@@ -98,8 +101,6 @@ class RegistrationController: UIViewController {
                 self?.showHUDWithError(error: err)
                 return
             }
-            
-            print("Finished register")
         }
     }
     

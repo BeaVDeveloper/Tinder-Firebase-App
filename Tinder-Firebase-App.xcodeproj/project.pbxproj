@@ -25,6 +25,9 @@
 		1B88AC2622005F34005AEAE3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2522005F34005AEAE3 /* RegistrationViewModel.swift */; };
 		1B88AC28220072E8005AEAE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B88AC27220072E7005AEAE3 /* GoogleService-Info.plist */; };
 		1B88AC2A22008997005AEAE3 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2922008997005AEAE3 /* Bindable.swift */; };
+		1B88AC2C2205CA99005AEAE3 /* SettingControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2B2205CA99005AEAE3 /* SettingControllerTableViewController.swift */; };
+		1B88AC2E22060451005AEAE3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2D22060451005AEAE3 /* SettingsCell.swift */; };
+		1B88AC3022061A75005AEAE3 /* AgeRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88AC2F22061A75005AEAE3 /* AgeRangeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		1B88AC2522005F34005AEAE3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		1B88AC27220072E7005AEAE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B88AC2922008997005AEAE3 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		1B88AC2B2205CA99005AEAE3 /* SettingControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingControllerTableViewController.swift; sourceTree = "<group>"; };
+		1B88AC2D22060451005AEAE3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		1B88AC2F22061A75005AEAE3 /* AgeRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeCell.swift; sourceTree = "<group>"; };
 		394D44D3A45684F094DB3605 /* Pods-Tinder-Firebase-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Firebase-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder-Firebase-App/Pods-Tinder-Firebase-App.release.xcconfig"; sourceTree = "<group>"; };
 		6CA9955C64DDA4501F9080E1 /* Pods-Tinder-Firebase-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tinder-Firebase-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tinder-Firebase-App/Pods-Tinder-Firebase-App.debug.xcconfig"; sourceTree = "<group>"; };
 		8E5316C67FD4578129228AA7 /* Pods_Tinder_Firebase_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinder_Firebase_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1B88AC0F21FDAE3F005AEAE3 /* Extensions.swift */,
+				1B88AC2922008997005AEAE3 /* Bindable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 				1B88AC1421FDBECD005AEAE3 /* TopNavigationStackView.swift */,
 				1B88AC1621FDDF76005AEAE3 /* CardView.swift */,
 				1B88AC2321FF8206005AEAE3 /* CustomTextField.swift */,
+				1B88AC2D22060451005AEAE3 /* SettingsCell.swift */,
+				1B88AC2F22061A75005AEAE3 /* AgeRangeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,7 +142,7 @@
 			children = (
 				1B88ABFE21FDADAB005AEAE3 /* HomeController.swift */,
 				1B88AC2121FF79DE005AEAE3 /* RegistrationController.swift */,
-				1B88AC2922008997005AEAE3 /* Bindable.swift */,
+				1B88AC2B2205CA99005AEAE3 /* SettingControllerTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,12 +342,15 @@
 				1B88AC1321FDB6A1005AEAE3 /* HomeBottomControlsStackView.swift in Sources */,
 				1B88AC2021FE4019005AEAE3 /* Advertiser.swift in Sources */,
 				1B88AC1021FDAE3F005AEAE3 /* Extensions.swift in Sources */,
+				1B88AC3022061A75005AEAE3 /* AgeRangeCell.swift in Sources */,
 				1B88ABFD21FDADAB005AEAE3 /* AppDelegate.swift in Sources */,
+				1B88AC2C2205CA99005AEAE3 /* SettingControllerTableViewController.swift in Sources */,
 				1B88AC1E21FE2C04005AEAE3 /* CardViewModel.swift in Sources */,
 				1B88AC1721FDDF76005AEAE3 /* CardView.swift in Sources */,
 				1B88AC1521FDBECD005AEAE3 /* TopNavigationStackView.swift in Sources */,
 				1B88AC2221FF79DE005AEAE3 /* RegistrationController.swift in Sources */,
 				1B88AC1A21FE2324005AEAE3 /* User.swift in Sources */,
+				1B88AC2E22060451005AEAE3 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
