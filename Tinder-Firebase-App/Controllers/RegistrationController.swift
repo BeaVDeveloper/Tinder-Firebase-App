@@ -88,18 +88,18 @@ class RegistrationController: UIViewController {
         return button
     }()
     
+    let registrationHUD = JGProgressHUD(style: .dark)
+    
     @objc fileprivate func handleRegister() {
-        
         hideKeyboard()
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
         
-        Auth.auth().createUser(withEmail: email, password: password) { (res, err) in
+        registrationViewModel.performRegistration { [weak self] (err) in
             if let err = err {
-                self.showHUDWithError(error: err)
+                self?.showHUDWithError(error: err)
                 return
             }
-            print("Successfully registered user: ", res?.user.uid)
+            
+            print("Finished register")
         }
     }
     
@@ -115,6 +115,7 @@ class RegistrationController: UIViewController {
     //MARK: - Fileprivate
     
     fileprivate func showHUDWithError(error: Error) {
+        registrationHUD.dismiss()
         let hud = JGProgressHUD(style: .dark)
         hud.textLabel.text = "Failed registration"
         hud.detailTextLabel.text = error.localizedDescription
@@ -134,6 +135,15 @@ class RegistrationController: UIViewController {
         registrationViewModel.bindableImage.bind { [unowned self] (img) in
             self.selectPhotoButton.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
         }
+        
+        registrationViewModel.bindableIsRegistering.bind { [unowned self] (isRegistering) in
+            if isRegistering == true {
+                self.registrationHUD.textLabel.text = "Register"
+                self.registrationHUD.show(in: self.view)
+            } else {
+                self.registrationHUD.dismiss()
+            }
+        }
     }
     
     fileprivate func setupNotificationObservers() {
@@ -143,7 +153,7 @@ class RegistrationController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
+     //   NotificationCenter.default.removeObserver(self)
     }
     
     @objc fileprivate func handleKeyboardShow(notification: Notification) {
